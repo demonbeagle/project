@@ -1,0 +1,40 @@
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/estilo.css}">
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+</head>
+<body>
+
+<div class="simple-login-container">
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Oxxo_Logo.svg" alt="opso" width="200" height="100">
+    </center>
+
+    <h2>Login</h2>
+    <form name="form" th:action="@{/login}" action="/login" method="POST">
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="text" class="form-control" name="username" value="" placeholder="Username">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="password" name="password" placeholder="Password" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="submit" id="login" value="Login" class="btn btn-block btn-login" placeholder="Enter your Password" >
+        </div>
+    </div>
+    </form>
+</div>
+
+
+</body>
+</html>
